@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blockchain Basics - Trivia Game</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript
+      ><link rel="stylesheet" href="assets/css/noscript.css"
+    /></noscript>
+  </head>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Header -->
+      <header id="header">
+        <div class="inner">
+          <!-- Logo -->
+          <a href="index.html" class="logo">
+            <span class="symbol"><img src="images/logo.svg" alt="Logo" /></span>
+            <span class="title">Blockchain Basics</span>
+          </a>
+
+          <!-- Wallet Connection -->
+          <div id="wallet-connection" class="header-button">
+            <button id="connect-wallet" class="glow-on-hover">
+              Connect Phantom Wallet
+            </button>
+            <div id="wallet-dropdown" style="display: none">
+              <span id="wallet-address">
+                <i class="fas fa-coins"></i>
+                <!-- Font Awesome Icon -->
+                <span class="truncated-address"
+                  >GNdkB3EX7djb2AyqRLyTNeDyuo1fRoMUFzkhmsS6Eq7t</span
+                >
+              </span>
+              <div class="dropdown">
+                <div class="dropdown-content">
+                  <a href="#">Balance: <span id="wallet-balance">--</span></a>
+                  <a href="#">My History</a>
+                  <a href="#">My Achievements</a>
+                  <a href="#">Upgrade to Premium</a>
+                  <a href="#" id="logout">Log Out</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Menu -->
+      <nav id="menu">
+        <h2>Menu</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#level1" onclick="loadForm('level1')">Level 1</a></li>
+          <li><a href="#level2" onclick="loadForm('level2')">Level 2</a></li>
+          <li><a href="#level3" onclick="loadForm('level3')">Level 3</a></li>
+          <li><a href="#level4" onclick="loadForm('level4')">Level 4</a></li>
+          <li><a href="#level5" onclick="loadForm('level5')">Level 5</a></li>
+        </ul>
+      </nav>
+
+      <!-- Main -->
+      <div id="main">
+        <div class="inner">
+          <header>
+            <h1>Blockchain Basics: Educational Trivia Game</h1>
+            <p>
+              Engage in an interactive learning experience! Progress through
+              different levels and answer trivia questions to learn blockchain
+              concepts step by step.
+            </p>
+          </header>
+
+          <section class="tiles">
+            <article class="style1">
+              <span class="image">
+                <img src="images/pic01.jpg" alt="Level 1" />
+              </span>
+              <a href="#level1" onclick="loadForm('level1')">
+                <h2>Level 1</h2>
+                <div class="content">
+                  <p>
+                    Introduction to Blockchain Basics. Complete the form to get
+                    started!
+                  </p>
+                </div>
+              </a>
+            </article>
+            <article class="style2">
+              <span class="image">
+                <img src="images/pic02.jpg" alt="Level 2" />
+              </span>
+              <a href="#level2" onclick="loadForm('level2')">
+                <h2>Level 2</h2>
+                <div class="content">
+                  <p>Explore Blockchain Transactions. Test your knowledge!</p>
+                </div>
+              </a>
+            </article>
+            <article class="style3">
+              <span class="image">
+                <img src="images/pic03.jpg" alt="Level 3" />
+              </span>
+              <a href="#level3" onclick="loadForm('level3')">
+                <h2>Level 3</h2>
+                <div class="content">
+                  <p>Understanding Smart Contracts. Take the challenge!</p>
+                </div>
+              </a>
+            </article>
+            <article class="style4">
+              <span class="image">
+                <img src="images/pic04.jpg" alt="Level 4" />
+              </span>
+              <a href="#level4" onclick="loadForm('level4')">
+                <h2>Level 4</h2>
+                <div class="content">
+                  <p>
+                    Decentralization and Consensus. Get ready for more learning!
+                  </p>
+                </div>
+              </a>
+            </article>
+            <article class="style5">
+              <span class="image">
+                <img src="images/pic05.jpg" alt="Level 5" />
+              </span>
+              <a href="#level5" onclick="loadForm('level5')">
+                <h2>Level 5</h2>
+                <div class="content">
+                  <p>Advanced Blockchain Concepts. Master the game!</p>
+                </div>
+              </a>
+            </article>
+          </section>
+
+          <!-- Placeholder for forms -->
+          <section id="forms"></section>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer id="footer">
+        <div class="inner">
+          <ul class="copyright">
+            <li>&copy; Blockchain Basics. All rights reserved.</li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <section id="form">
+      <!-- Load forms dynamically -->
+      <script>
+        function loadForm(level) {
+          var formContent = {
+            level1: `
+              <section id="level1">
+                <h2>Level 1: Blockchain Basics</h2>
+                <iframe src="https://my.forms.app/form/66e90ad91cecf566f1897523"
+                allowtransparency="true" allowfullscreen="true"
+                allow="geolocation; microphone; camera" 
+                style="width: 100vw; min-width:100%; height:600px; border:none;"></iframe>
+              </section>`,
+            level2: `
+              <section id="level2">
+                <h2>Level 2: Blockchain Transactions</h2>
+                <iframe src="https://my.forms.app/form/66e90ad91cecf566f1897523"
+                allowtransparency="true" allowfullscreen="true"
+                allow="geolocation; microphone; camera"
+                style="width: 100vw; min-width:100%; height:600px; border:none;"></iframe>
+              </section>`,
+            level3: `
+              <section id="level3">
+                <h2>Level 3: Smart Contracts</h2>
+                <iframe src="https://my.forms.app/form/66e90ad91cecf566f1897523"
+                allowtransparency="true" allowfullscreen="true"
+                allow="geolocation; microphone; camera"
+                style="width: 100vw; min-width:100%; height:600px; border:none;"></iframe>
+              </section>`,
+            level4: `
+              <section id="level4">
+                <h2>Level 4: Decentralization</h2>
+                <iframe src="https://my.forms.app/form/66e90ad91cecf566f1897523"
+                allowtransparency="true" allowfullscreen="true"
+                allow="geolocation; microphone; camera"
+                style="width: 100vw; min-width:100%; height:600px; border:none;"></iframe>
+              </section>`,
+            level5: `
+              <section id="level5">
+                <h2>Level 5: Advanced Blockchain</h2>
+                <iframe src="https://my.forms.app/form/66e90ad91cecf566f1897523"
+                allowtransparency="true" allowfullscreen="true"
+                allow="geolocation; microphone; camera"
+                style="width: 100vw; min-width:100%; height:600px; border:none;"></iframe>
+              </section>`,
+          };
+
+          document.getElementById("forms").innerHTML = formContent[level];
+        }
+      </script>
+    </section>
+  </body>
+</html>
