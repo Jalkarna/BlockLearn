@@ -12,6 +12,14 @@
       ><link rel="stylesheet" href="assets/css/noscript.css"
     /></noscript>
   </head>
+  <div id="particles-js"></div>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS.load("particles-js", "assets/particles.json", function () {
+      console.log("particles.js loaded");
+    });
+  </script>
+
   <body class="is-preload">
     <!-- Wrapper -->
     <div id="wrapper">
@@ -27,7 +35,7 @@
           <!-- Wallet Connection -->
           <div id="wallet-connection" class="header-button">
             <button id="connect-wallet" class="glow-on-hover">
-              Connect Phantom Wallet
+              Connect Wallet
             </button>
             <div id="wallet-dropdown" style="display: none">
               <span id="wallet-address">
