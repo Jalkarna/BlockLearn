@@ -1,0 +1,54 @@
+{
+  "questions": [
+    {
+      "question": "What is blockchain?",
+      "answers": [
+        "A type of cryptocurrency",
+        "A distributed ledger technology",
+        "A new programming language",
+        "A cloud storage solution"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Who created Bitcoin?",
+      "answers": [
+        "Vitalik Buterin",
+        "Satoshi Nakamoto",
+        "Charlie Lee",
+        "Gavin Andresen"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is a smart contract?",
+      "answers": [
+        "A legally binding contract",
+        "A contract written by AI",
+        "Self-executing code on a blockchain",
+        "A contract between smart devices"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What is the purpose of mining in blockchain?",
+      "answers": [
+        "To create new cryptocurrencies",
+        "To validate and add transactions to the blockchain",
+        "To hack other users' wallets",
+        "To encrypt messages between users"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is a consensus mechanism in blockchain?",
+      "answers": [
+        "A voting system for blockchain governance",
+        "A method for reaching agreement on the state of the blockchain",
+        "A way to consensus among developers",
+        "A mechanism for creating new blocks"
+      ],
+      "correct": 1
+    }
+  ]
+}
